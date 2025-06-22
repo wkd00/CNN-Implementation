@@ -123,12 +123,19 @@ Model: "sequential_3"
 ### Attempt 4. 
 - Image size: 224 * 224 * 3 -> 64 * 64 * 3
 - Data Augmentation on Training dataset:
-    rotation_range=10,
-    width_shift_range=0.05,
-    height_shift_range=0.05,
-    zoom_range=0.05,
-    horizontal_flip=True,
+  
+    rotation_range=10
+  
+    width_shift_range=0.05
+  
+    height_shift_range=0.05
+  
+    zoom_range=0.05
+  
+    horizontal_flip=True
+  
     fill_mode='nearest'
+  
 - Train accuracy: 0.8703
 - Validation accuracy: 0.7800
 
