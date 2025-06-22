@@ -12,9 +12,33 @@
 - Train accuracy: 0.9571
 - Validation Accuracy: 1
 
+| Layer (Type)          | Output Shape         | Param #   |
+|-----------------------|----------------------|-----------|
+| `Conv2D`              | (None, 222, 222, 32) | 896       |
+| `MaxPooling2D`        | (None, 111, 111, 32) | 0         |
+| `BatchNormalization`  | (None, 111, 111, 32) | 128       |
+| `Conv2D`              | (None, 109, 109, 64) | 18496     |
+| `MaxPooling2D`        | (None, 54, 54, 64)   | 0         |
+| `BatchNormalization`  | (None, 54, 54, 64)   | 256       |
+| `Conv2D`              | (None, 52, 52, 128)  | 73856     |
+| `MaxPooling2D`        | (None, 26, 26, 128)  | 0         |
+| `BatchNormalization`  | (None, 26, 26, 128)  | 512       |
+| `Flatten`             | (None, 86528)        | 0         |
+| `Dense`               | (None, 128)          | 11075712  |
+| `Dropout`             | (None, 128)          | 0         |
+| `BatchNormalization`  | (None, 128)          | 512       |
+| `Dense`               | (None, 64)           | 8256      |
+| `Dropout`             | (None, 64)           | 0         |
+| `BatchNormalization`  | (None, 64)           | 256       |
+| `Dense`               | (None, 1)            | 65        |
+| **Total Params** |                      | 11178945  |
+| **Trainable Params** |                      | 11178113  |
+| **Non-Trainable Params**|                      | 832       |
+
+
 Model: "sequential"
 _________________________________________________________________
- Layer (type)                Output Shape              Param    
+ Layer (type)                Output Shape              Param #   
 =================================================================
  conv2d (Conv2D)             (None, 222, 222, 32)      896       
                                                                  
@@ -54,7 +78,7 @@ _________________________________________________________________
   
 Model: "sequential"
 _________________________________________________________________
- Layer (type)                Output Shape              Param    
+ Layer (type)                Output Shape              Param #   
 =================================================================
  conv2d (Conv2D)             (None, 222, 222, 64)      1792      
                                                                  
@@ -91,7 +115,7 @@ _________________________________________________________________
 
 Model: "sequential_12"
 _________________________________________________________________
- Layer (type)                Output Shape              Param    
+ Layer (type)                Output Shape              Param #  
 =================================================================
  conv2d_45 (Conv2D)          (None, 222, 222, 32)      896       
                                                                  
@@ -127,7 +151,7 @@ _________________________________________________________________
 
 Model: "sequential_3"
 _________________________________________________________________
- Layer (type)                Output Shape              Param    
+ Layer (type)                Output Shape              Param #   
 =================================================================
  vgg16 (Functional)          (None, 7, 7, 512)         14714688  
                                                                  
@@ -159,7 +183,7 @@ _________________________________________________________________
 
 Model: "sequential_12"
 _________________________________________________________________
- Layer (type)                Output Shape              Param    
+ Layer (type)                Output Shape              Param #   
 =================================================================
  conv2d_30 (Conv2D)          (None, 62, 62, 64)        1792      
                                                                  
@@ -196,7 +220,7 @@ _________________________________________________________________
 
 Model: "sequential_7"
 _________________________________________________________________
- Layer (type)                Output Shape              Param    
+ Layer (type)                Output Shape              Param #   
 =================================================================
  conv2d_22 (Conv2D)          (None, 36, 36, 32)        896       
                                                                  
