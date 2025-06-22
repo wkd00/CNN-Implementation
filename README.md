@@ -1,5 +1,8 @@
 # CNN Implementation
 
+## 0. Introduction 
+- A project conducted in a Deep Learning course within the Department of Applied Statistics.
+
 ## 1. Dataset
 - 100 Sports Image Classification (https://www.kaggle.com/datasets/gpiosenka/sports-classification)
 - Used only 10 sports(fencing, golf, hockey, rugby, ski-jumping, swimming, table tennis, tennis, volleyball, weightlifting)
