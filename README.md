@@ -108,24 +108,17 @@ Model: "sequential_12"
 - Validation accuracy: 0.5700
 
 Model: "sequential_3"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- vgg16 (Functional)          (None, 7, 7, 512)         14714688  
-                                                                 
- flatten_3 (Flatten)         (None, 25088)             0         
-                                                                 
- dense_12 (Dense)            (None, 256)               6422784   
-                                                                 
- dropout_9 (Dropout)         (None, 256)               0         
-                                                                 
- dense_13 (Dense)            (None, 10)                2570      
-                                                                 
-=================================================================
-Total params: 21140042 (80.64 MB)
-Trainable params: 21140042 (80.64 MB)
-Non-trainable params: 0 (0.00 Byte)
-_________________________________________________________________
+
+| Layer (Type)                 | Output Shape         | Param #    |
+|------------------------------|----------------------|------------|
+| `vgg16 (Functional)`         | (None, 7, 7, 512)    | 14714688   |
+| `flatten_3 (Flatten)`        | (None, 25088)        | 0          |
+| `dense_12 (Dense)`           | (None, 256)          | 6422784    |
+| `dropout_9 (Dropout)`        | (None, 256)          | 0          |
+| `dense_13 (Dense)`           | (None, 10)           | 2570       |
+| **Total params** |                      | 21140042   |
+| **Trainable params** |                      | 21140042   |
+| **Non-trainable params** |                      | 0          |
 
 ### Attempt 4. 
 - Image size: 224 * 224 * 3 -> 64 * 64 * 3
